@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic
+  namespace: user-workspace
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/productcicd/hacbs-apps@sha256:5db72eb65ed1f93d5995a811d39056181522d1b32675768a1daabd9cd2fd5825
+        name: container-image
+        resources: {}
+status: {}
